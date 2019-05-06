@@ -76,21 +76,21 @@ const parent = {
   name: "Susan",
   age: 70,
   speak: () =>{
-    return "My name is " + this.name
+    return "My name is Susan"
   },
 
   child: {
     name: "George",
     age: 50,
     speak: () => {
-      return "My name is" + this.name
+      return "My name is George"
     },
 
     grandchild: {
       name: "Sam",
       age: 30,
       speak: () => {
-        return "My name is" + this.name
+        return "My name is Sam"
       }
     }
   }
@@ -108,4 +108,8 @@ console.log(parent.speak())
 
 // Have the child speak
 
+console.log(parent.child.speak())
+
 // Have the grandchild speak
+
+console.log(parent.child.grandchild.speak())
